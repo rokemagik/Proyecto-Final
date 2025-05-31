@@ -1,0 +1,17 @@
+@use '../utilidades/variables' as v;
+
+html, body {
+    width: 100%;
+    overflow-x: hidden !important; 
+    margin: 0;
+    padding: 0;
+    touch-action: pan-y; 
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%; 
+    margin: 0;
+    padding: 0;
+}

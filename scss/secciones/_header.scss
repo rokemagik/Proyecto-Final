@@ -1,0 +1,147 @@
+@use '../utilidades/variables' as v;
+@use '../utilidades/mixins' as m;
+
+header {
+    background-image: url(../../img/imagen-header.webp);
+    background-position: center center;
+    background-size: cover;
+    min-height: 20rem;
+    padding: 1.7rem;
+    
+    .contenedor-header {
+        display: flex;
+        justify-content: end;
+        gap: 4rem;
+        max-height: 2.75rem;
+
+        .titulo-header {
+        font-size: 40px;
+        color: v.$blanco-humo;
+        }
+
+        .nav-list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin: 1.5rem 1rem 1rem 1rem;
+
+        a {
+            text-decoration: none;
+            color: v.$naranja-dorado;
+            font-size: 1.2rem;
+        }
+
+        .enlace:hover {
+            
+        }
+
+        .activo {
+
+        }
+        }
+
+        .abrir-menu,
+        .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 2.75rem;
+
+        cursor: pointer;
+        color: v.$naranja-dorado;
+        background-color: transparent;
+        }
+
+        .cerrar-menu {
+        background-color: v.$gris-carbon;
+        }
+
+        .nav {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(100%);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: v.$gris-carbon;
+        border-left: 1px solid v.$naranja;
+        padding: 1.7rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+
+        &.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+
+        &.ocultar {
+            transform: translateX(100%);
+            opacity: 0;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        }
+
+        @include m.telefono {
+        .abrir-menu,
+        .cerrar-menu {
+            display: none;
+        }
+
+        .nav {
+            opacity: 1;
+            visibility: visible;
+            transform: none;
+            position: static;
+            flex-direction: row;
+            align-items: center;
+            background-color: transparent;
+            padding: 0;
+            box-shadow: none;
+        }
+
+        .nav-list {
+            flex-direction: row;
+            align-items: center;
+            gap: 2rem;
+        }
+        }
+
+        @include m.tablet {
+            justify-content: space-around;
+        }
+    }
+
+    .seccion-header {
+        text-align: right;
+        padding-top: 3rem;
+
+        h2 {
+            color: v.$naranja;
+            font-size: 1.8rem;
+        }
+
+        p {
+            color: v.$blanco-humo;
+            font-size: 1.2rem;
+            margin: .5rem 0 1.5rem 4.5rem;
+        }
+
+        .boton-header {
+            color: v.$blanco-humo;
+            background-color: v.$naranja;
+            text-decoration: none;
+            padding: .8rem 1.4rem .8rem 1.4rem;
+            font-size: 1.1rem;
+            border-radius: 5px;
+        }
+    }
+}

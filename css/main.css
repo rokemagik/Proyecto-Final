@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/** Fuentes **/
+/** Colores **/
+/** Tamaños **/
+html, body {
+  width: 100%;
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
+  touch-action: pan-y;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url(../../img/imagen-header.webp);
+  background-position: center center;
+  background-size: cover;
+  min-height: 20rem;
+  padding: 1.7rem;
+}
+header .contenedor-header {
+  display: flex;
+  justify-content: end;
+  gap: 4rem;
+  max-height: 2.75rem;
+}
+header .contenedor-header .titulo-header {
+  font-size: 40px;
+  color: #EDEDED;
+}
+header .contenedor-header .nav-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 1.5rem 1rem 1rem 1rem;
+}
+header .contenedor-header .nav-list a {
+  text-decoration: none;
+  color: #F29F05;
+  font-size: 1.2rem;
+}
+header .contenedor-header .abrir-menu,
+header .contenedor-header .cerrar-menu {
+  display: block;
+  border: 0;
+  font-size: 2.75rem;
+  cursor: pointer;
+  color: #F29F05;
+  background-color: transparent;
+}
+header .contenedor-header .cerrar-menu {
+  background-color: #1C1C1C;
+}
+header .contenedor-header .nav {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 1rem;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1C1C1C;
+  border-left: 1px solid #D9762A;
+  padding: 1.7rem;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+}
+header .contenedor-header .nav.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+header .contenedor-header .nav.ocultar {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+@media (min-width: 480px) {
+  header .contenedor-header .abrir-menu,
+  header .contenedor-header .cerrar-menu {
+    display: none;
+  }
+  header .contenedor-header .nav {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    padding: 0;
+    box-shadow: none;
+  }
+  header .contenedor-header .nav-list {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  header .contenedor-header {
+    justify-content: space-around;
+  }
+}
+header .seccion-header {
+  text-align: right;
+  padding-top: 3rem;
+}
+header .seccion-header h2 {
+  color: #D9762A;
+  font-size: 1.8rem;
+}
+header .seccion-header p {
+  color: #EDEDED;
+  font-size: 1.2rem;
+  margin: 0.5rem 0 1.5rem 4.5rem;
+}
+header .seccion-header .boton-header {
+  color: #EDEDED;
+  background-color: #D9762A;
+  text-decoration: none;
+  padding: 0.8rem 1.4rem 0.8rem 1.4rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=main.css.map */
