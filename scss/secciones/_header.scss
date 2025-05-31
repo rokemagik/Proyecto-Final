@@ -2,7 +2,7 @@
 @use '../utilidades/mixins' as m;
 
 header {
-    background-image: url(/img/imagen-header.webp);
+    background-image: url("/img/imagen-header.webp");
     background-position: center center;
     background-size: cover;
     min-height: 20rem;
