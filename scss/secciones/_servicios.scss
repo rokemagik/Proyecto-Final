@@ -4,10 +4,14 @@
 
 main {
 
+    .imagen-png {
+        margin-top: 2rem;
+    }
+
     .titulo-servicios {
         color: v.$naranja;
         text-align: center;
-        margin-top: 6rem;
+        margin-top: 2rem;
         font-size: 2.5rem;
     }
 
@@ -50,7 +54,7 @@ main {
                     color: v.$blanco-humo;
                     margin: 0.5rem 0 1.5rem 0;
                     line-height: 1.4;
-                    font-size: 1rem;
+                    font-size: 1.1rem;
                 }
                 a {
                     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
@@ -101,7 +105,7 @@ main {
                     color: v.$blanco-humo;
                     margin: 0.5rem 0 1.5rem 0;
                     line-height: 1.4;
-                    font-size: 1rem;
+                    font-size: 1.1rem;
                 }
                 a {
                     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
@@ -152,7 +156,7 @@ main {
                     color: v.$blanco-humo;
                     margin: 0.5rem 0 1.5rem 0;
                     line-height: 1.4;
-                    font-size: 1rem;
+                    font-size: 1.1rem;
                 }
                 a {
                     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
@@ -203,7 +207,7 @@ main {
                     color: v.$blanco-humo;
                     margin: 0.5rem 0 1.5rem 0;
                     line-height: 1.4;
-                    font-size: 1.05rem;
+                    font-size: 1.1rem;
                 }
                 a {
                     padding: 0.5rem 1.5rem 0.5rem 1.5rem;

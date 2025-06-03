@@ -169,10 +169,13 @@ header .seccion-header .boton-header:hover {
   background-color: #BB4430;
 }
 
+main .imagen-png {
+  margin-top: 2rem;
+}
 main .titulo-servicios {
   color: #D9762A;
   text-align: center;
-  margin-top: 6rem;
+  margin-top: 2rem;
   font-size: 2.5rem;
 }
 main .seccion-main {
@@ -212,7 +215,7 @@ main .seccion-main .div-1 div p {
   color: #EDEDED;
   margin: 0.5rem 0 1.5rem 0;
   line-height: 1.4;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 main .seccion-main .div-1 div a {
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
@@ -258,7 +261,7 @@ main .seccion-main .div-2 div p {
   color: #EDEDED;
   margin: 0.5rem 0 1.5rem 0;
   line-height: 1.4;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 main .seccion-main .div-2 div a {
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
@@ -304,7 +307,7 @@ main .seccion-main .div-3 div p {
   color: #EDEDED;
   margin: 0.5rem 0 1.5rem 0;
   line-height: 1.4;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 main .seccion-main .div-3 div a {
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
@@ -350,7 +353,7 @@ main .seccion-main .div-4 div p {
   color: #EDEDED;
   margin: 0.5rem 0 1.5rem 0;
   line-height: 1.4;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
 }
 main .seccion-main .div-4 div a {
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
