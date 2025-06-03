@@ -9,6 +9,15 @@ html, body {
   padding: 0;
   touch-action: pan-y;
   position: relative;
+  background-color: #000000;
+  font-family: "Cormorant Garamond", serif;
+}
+html h1, html h2, html h3, html h4, body h1, body h2, body h3, body h4 {
+  font-family: "Playfair Display", serif;
+}
+html a, body a {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
 }
 
 * {
@@ -19,21 +28,23 @@ html, body {
 }
 
 header {
-  background-image: url("../img/imagen-header.webp");
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.4)), linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 100%), url("../img/imagen-header.webp");
   background-position: center center;
   background-size: cover;
-  min-height: 20rem;
+  min-height: 25rem;
   padding: 1.7rem;
 }
 header .contenedor-header {
   display: flex;
   justify-content: end;
-  gap: 4rem;
+  gap: 3rem;
   max-height: 2.75rem;
 }
 header .contenedor-header .titulo-header {
   font-size: 40px;
   color: #EDEDED;
+  line-height: 1;
+  padding-top: 0.6rem;
 }
 header .contenedor-header .nav-list {
   list-style-type: none;
@@ -41,24 +52,40 @@ header .contenedor-header .nav-list {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  margin: 1.5rem 1rem 1rem 1rem;
+  margin: 1.5rem 0rem;
 }
-header .contenedor-header .nav-list a {
+header .contenedor-header .nav-list li {
+  background-color: #1C1C1C;
+  width: 100%;
+  text-align: center;
+  border-radius: 3px;
+}
+header .contenedor-header .nav-list li a {
+  display: block;
+  padding: 0.5rem 1rem;
   text-decoration: none;
-  color: #F29F05;
+  color: #D9762A;
   font-size: 1.2rem;
+}
+header .contenedor-header .nav-list .enlace:hover {
+  color: #F29F05;
+}
+header .contenedor-header .nav-list .activo {
+  color: #BB4430;
 }
 header .contenedor-header .abrir-menu,
 header .contenedor-header .cerrar-menu {
   display: block;
   border: 0;
   font-size: 2.75rem;
+  padding-top: 0.5rem;
   cursor: pointer;
   color: #F29F05;
   background-color: transparent;
 }
 header .contenedor-header .cerrar-menu {
   background-color: #1C1C1C;
+  background: transparent;
 }
 header .contenedor-header .nav {
   opacity: 0;
@@ -74,8 +101,8 @@ header .contenedor-header .nav {
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: #1C1C1C;
-  border-left: 1px solid #D9762A;
+  background: #000000;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(33, 33, 33) 100%);
   padding: 1.7rem;
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
 }
@@ -118,24 +145,223 @@ header .contenedor-header .nav.ocultar {
 }
 header .seccion-header {
   text-align: right;
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
 header .seccion-header h2 {
   color: #D9762A;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 header .seccion-header p {
   color: #EDEDED;
   font-size: 1.2rem;
-  margin: 0.5rem 0 1.5rem 4.5rem;
+  margin: 0.7rem 0 2rem 1.5rem;
+  line-height: 1.4;
 }
 header .seccion-header .boton-header {
   color: #EDEDED;
   background-color: #D9762A;
   text-decoration: none;
-  padding: 0.8rem 1.4rem 0.8rem 1.4rem;
+  padding: 0.6rem 1.8rem 0.6rem 1.8rem;
   font-size: 1.1rem;
-  border-radius: 5px;
+  border-radius: 3px;
+}
+header .seccion-header .boton-header:hover {
+  background-color: #BB4430;
+}
+
+main .titulo-servicios {
+  color: #D9762A;
+  text-align: center;
+  margin-top: 6rem;
+  font-size: 2.5rem;
+}
+main .seccion-main {
+  margin-top: 3.3rem;
+}
+main .seccion-main .div-1 {
+  position: relative;
+  overflow: hidden;
+  background-image: url("../img/imagen1.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 13rem;
+  margin: 0 1.5rem 3rem 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  border: 2px solid black;
+}
+main .seccion-main .div-1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 1;
+}
+main .seccion-main .div-1 div {
+  position: relative;
+  z-index: 2;
+  padding: 0 2rem 1.7rem 1.7rem;
+}
+main .seccion-main .div-1 div h1 {
+  color: #EDEDED;
+  font-size: 1.5rem;
+}
+main .seccion-main .div-1 div p {
+  color: #EDEDED;
+  margin: 0.5rem 0 1.5rem 0;
+  line-height: 1.4;
+  font-size: 1rem;
+}
+main .seccion-main .div-1 div a {
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  color: #EDEDED;
+  background-color: #D9762A;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+main .seccion-main .div-1 div a:hover {
+  background-color: #BB4430;
+}
+main .seccion-main .div-2 {
+  position: relative;
+  overflow: hidden;
+  background-image: url("../img/imagen2.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 13rem;
+  margin: 0 1.5rem 3rem 1.5rem;
+  display: flex;
+  align-items: flex-end;
+}
+main .seccion-main .div-2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 1;
+}
+main .seccion-main .div-2 div {
+  position: relative;
+  z-index: 2;
+  padding: 0 2rem 1.7rem 1.7rem;
+}
+main .seccion-main .div-2 div h1 {
+  color: #EDEDED;
+  font-size: 1.5rem;
+}
+main .seccion-main .div-2 div p {
+  color: #EDEDED;
+  margin: 0.5rem 0 1.5rem 0;
+  line-height: 1.4;
+  font-size: 1rem;
+}
+main .seccion-main .div-2 div a {
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  color: #EDEDED;
+  background-color: #D9762A;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+main .seccion-main .div-2 div a:hover {
+  background-color: #BB4430;
+}
+main .seccion-main .div-3 {
+  position: relative;
+  overflow: hidden;
+  background-image: url("../img/imagen3.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 13rem;
+  margin: 0 1.5rem 3rem 1.5rem;
+  display: flex;
+  align-items: flex-end;
+}
+main .seccion-main .div-3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 1;
+}
+main .seccion-main .div-3 div {
+  position: relative;
+  z-index: 2;
+  padding: 0 2rem 1.7rem 1.7rem;
+}
+main .seccion-main .div-3 div h1 {
+  color: #EDEDED;
+  font-size: 1.5rem;
+}
+main .seccion-main .div-3 div p {
+  color: #EDEDED;
+  margin: 0.5rem 0 1.5rem 0;
+  line-height: 1.4;
+  font-size: 1rem;
+}
+main .seccion-main .div-3 div a {
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  color: #EDEDED;
+  background-color: #D9762A;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+main .seccion-main .div-3 div a:hover {
+  background-color: #BB4430;
+}
+main .seccion-main .div-4 {
+  position: relative;
+  overflow: hidden;
+  background-image: url("../img/imagen4.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 13rem;
+  margin: 0 1.5rem 3rem 1.5rem;
+  display: flex;
+  align-items: flex-end;
+}
+main .seccion-main .div-4::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 1;
+}
+main .seccion-main .div-4 div {
+  position: relative;
+  z-index: 2;
+  padding: 0 2rem 1.7rem 1.7rem;
+}
+main .seccion-main .div-4 div h1 {
+  color: #EDEDED;
+  font-size: 1.5rem;
+}
+main .seccion-main .div-4 div p {
+  color: #EDEDED;
+  margin: 0.5rem 0 1.5rem 0;
+  line-height: 1.4;
+  font-size: 1.05rem;
+}
+main .seccion-main .div-4 div a {
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  color: #EDEDED;
+  background-color: #D9762A;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+main .seccion-main .div-4 div a:hover {
+  background-color: #BB4430;
 }
 
 /*# sourceMappingURL=main.css.map */

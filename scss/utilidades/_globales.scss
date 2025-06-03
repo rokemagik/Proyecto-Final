@@ -7,6 +7,17 @@ html, body {
     padding: 0;
     touch-action: pan-y; 
     position: relative;
+    background-color: v.$negro;
+    font-family: "Cormorant Garamond", serif;
+
+    h1, h2, h3, h4 {
+        font-family: "Playfair Display", serif;
+    }
+
+    a {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 700;
+    }
 }
 
 * {

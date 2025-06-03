@@ -1,0 +1,223 @@
+@use '../utilidades/variables' as v;
+@use '../utilidades/mixins' as m;
+
+
+main {
+
+    .titulo-servicios {
+        color: v.$naranja;
+        text-align: center;
+        margin-top: 6rem;
+        font-size: 2.5rem;
+    }
+
+    .seccion-main {
+        margin-top: 3.3rem;
+
+        .div-1 {
+            position: relative;
+            overflow: hidden;
+            background-image: url("../img/imagen1.jpg");
+            background-position: center center;
+            background-size: cover;
+            height: 13rem;
+            margin: 0 1.5rem 3rem 1.5rem;
+            display: flex;
+            align-items: flex-end;
+            border: 2px solid black;
+
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.3); 
+                backdrop-filter: blur(4px);  
+                -webkit-backdrop-filter: blur(4px);   
+                z-index: 1;
+            }
+
+            div {
+                position: relative;
+                z-index: 2;
+                padding: 0 2rem 1.7rem 1.7rem;
+                
+
+                h1 {
+                    color: v.$blanco-humo;
+                    font-size: 1.5rem;
+                }
+                p {
+                    color: v.$blanco-humo;
+                    margin: 0.5rem 0 1.5rem 0;
+                    line-height: 1.4;
+                    font-size: 1rem;
+                }
+                a {
+                    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+                    color: v.$blanco-humo;
+                    background-color: v.$naranja;
+                    border-radius: 3px;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+
+                    &:hover {
+                        background-color: v.$rojo-suave;
+                    }
+                }
+            }
+        }
+        .div-2 {
+            position: relative;
+            overflow: hidden;
+            background-image: url("../img/imagen2.jpg");
+            background-position: center center;
+            background-size: cover;
+            height: 13rem;
+            margin: 0 1.5rem 3rem 1.5rem;
+            display: flex;
+            align-items: flex-end;
+
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.3); 
+                backdrop-filter: blur(4px);  
+                -webkit-backdrop-filter: blur(4px);   
+                z-index: 1;
+            }
+
+            div {
+                position: relative;
+                z-index: 2;
+                padding: 0 2rem 1.7rem 1.7rem;
+                
+
+                h1 {
+                    color: v.$blanco-humo;
+                    font-size: 1.5rem;
+                }
+                p {
+                    color: v.$blanco-humo;
+                    margin: 0.5rem 0 1.5rem 0;
+                    line-height: 1.4;
+                    font-size: 1rem;
+                }
+                a {
+                    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+                    color: v.$blanco-humo;
+                    background-color: v.$naranja;
+                    border-radius: 3px;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+
+                    &:hover {
+                        background-color: v.$rojo-suave;
+                    }
+                }
+            }
+        }
+        .div-3 {
+            position: relative;
+            overflow: hidden;
+            background-image: url("../img/imagen3.jpg");
+            background-position: center center;
+            background-size: cover;
+            height: 13rem;
+            margin: 0 1.5rem 3rem 1.5rem;
+            display: flex;
+            align-items: flex-end;
+
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.75); 
+                backdrop-filter: blur(4px);  
+                -webkit-backdrop-filter: blur(4px);   
+                z-index: 1;
+            }
+
+            div {
+                position: relative;
+                z-index: 2;
+                padding: 0 2rem 1.7rem 1.7rem;
+                
+
+                h1 {
+                    color: v.$blanco-humo;
+                    font-size: 1.5rem;
+                }
+                p {
+                    color: v.$blanco-humo;
+                    margin: 0.5rem 0 1.5rem 0;
+                    line-height: 1.4;
+                    font-size: 1rem;
+                }
+                a {
+                    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+                    color: v.$blanco-humo;
+                    background-color: v.$naranja;
+                    border-radius: 3px;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+
+                    &:hover {
+                        background-color: v.$rojo-suave;
+                    }
+                }
+            }
+        }
+        .div-4 {
+            position: relative;
+            overflow: hidden;
+            background-image: url("../img/imagen4.jpg");
+            background-position: center center;
+            background-size: cover;
+            height: 13rem;
+            margin: 0 1.5rem 3rem 1.5rem;
+            display: flex;
+            align-items: flex-end;
+
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.4); 
+                backdrop-filter: blur(4px);  
+                -webkit-backdrop-filter: blur(4px);   
+                z-index: 1;
+            }
+
+            div {
+                position: relative;
+                z-index: 2;
+                padding: 0 2rem 1.7rem 1.7rem;
+                
+
+                h1 {
+                    color: v.$blanco-humo;
+                    font-size: 1.5rem;
+                }
+                p {
+                    color: v.$blanco-humo;
+                    margin: 0.5rem 0 1.5rem 0;
+                    line-height: 1.4;
+                    font-size: 1.05rem;
+                }
+                a {
+                    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+                    color: v.$blanco-humo;
+                    background-color: v.$naranja;
+                    border-radius: 3px;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+
+                    &:hover {
+                        background-color: v.$rojo-suave;
+                    }
+                }
+            }
+        }
+    }
+}
