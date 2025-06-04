@@ -97,6 +97,12 @@ main {
                     }
                 }
 
+                .contenidos {
+                    display: flex;
+                    justify-content: center;
+                    gap: 1.5rem;
+                }
+
                 .precio {
                     text-align: center;
                     font-family: "Open Sans", sans-serif;
