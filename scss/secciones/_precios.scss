@@ -1,0 +1,110 @@
+@use '../utilidades/variables' as v;
+@use '../utilidades/mixins' as m;
+
+main {
+
+    .titulo-precios {
+        color: v.$blanco-humo;
+        text-align: center;
+        padding: 2.5rem 2rem 1.5rem 2rem;
+        font-size: 2.2rem;
+    }
+
+    .formas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .forma-1 {
+            height: 2px;
+            width: 30%;
+            background-color: v.$gris-claro;
+        }
+
+        .forma-2 {
+            height: 7px;
+            width: 2%;
+            border-radius: 3px;
+            margin: 0rem 1rem;
+            background-color: v.$gris-claro;
+        }
+
+        .forma-3 {
+            height: 2px;
+            width: 30%;
+            background-color: v.$gris-claro;
+        }
+    }
+
+    .texto-precio {
+        color: v.$blanco-humo;
+        text-align: center;
+        padding: 1.5rem 2rem;
+        font-size: 1.2rem;
+    }
+
+    section {
+        
+        a {
+            text-decoration: none;
+
+            .producto {
+                background-color: v.$negro-claro;
+                margin: 2rem 2rem 3rem 2rem;
+                padding: 1rem;
+                border-radius: 7px;
+                border: 2px solid v.$naranja;
+
+                h1 {
+                    color: v.$blanco-humo;
+                    text-align: center;
+                    padding: 1rem;
+                    font-size: 1.9rem;
+                }
+
+                .texto-1 {
+                    color: v.$blanco-humo;
+                    text-align: center;
+                    font-family: "Open Sans", sans-serif;
+                    font-weight: 200;
+                }
+
+                .texto-2 {
+                    color: v.$gris-claro;
+                    text-align: center;
+                    font-size: 1.3rem;
+                    padding: 1rem 0 .3rem 0;
+                }
+
+                .estrellas {
+                    display: flex;
+                    justify-content: center;
+                    gap: .5rem;
+                    color: v.$naranja;
+                    text-align: center;
+                }
+
+                ul {
+                    list-style-type: none;            
+                    color: v.$naranja;  
+                    text-align: center;
+                    padding: 1.2rem 0;
+                    li {
+                        font-family: "Open Sans", sans-serif;
+                        font-weight: 200;
+                        color: v.$blanco-humo;
+                        padding: .2rem;
+                    }
+                }
+
+                .precio {
+                    text-align: center;
+                    font-family: "Open Sans", sans-serif;
+                    color: v.$naranja;
+                    font-size: 1.4rem;
+                    padding: .5rem 0 1.5rem 0;
+                }
+            }
+        }
+    }
+}

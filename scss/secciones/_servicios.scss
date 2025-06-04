@@ -59,7 +59,7 @@ main {
                 a {
                     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
                     color: v.$blanco-humo;
-                    background-color: v.$naranja;
+                    background-color: v.$naranja-oscuro;
                     border-radius: 3px;
                     text-decoration: none;
                     font-size: 1.2rem;
@@ -110,7 +110,7 @@ main {
                 a {
                     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
                     color: v.$blanco-humo;
-                    background-color: v.$naranja;
+                    background-color: v.$naranja-oscuro;
                     border-radius: 3px;
                     text-decoration: none;
                     font-size: 1.2rem;
@@ -136,7 +136,7 @@ main {
                 content: "";
                 position: absolute;
                 inset: 0;
-                background: rgba(0, 0, 0, 0.75); 
+                background: rgba(0, 0, 0, 0.7); 
                 backdrop-filter: blur(4px);  
                 -webkit-backdrop-filter: blur(4px);   
                 z-index: 1;
@@ -161,7 +161,7 @@ main {
                 a {
                     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
                     color: v.$blanco-humo;
-                    background-color: v.$naranja;
+                    background-color: v.$naranja-oscuro;
                     border-radius: 3px;
                     text-decoration: none;
                     font-size: 1.2rem;
@@ -212,7 +212,7 @@ main {
                 a {
                     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
                     color: v.$blanco-humo;
-                    background-color: v.$naranja;
+                    background-color: v.$naranja-oscuro;
                     border-radius: 3px;
                     text-decoration: none;
                     font-size: 1.2rem;

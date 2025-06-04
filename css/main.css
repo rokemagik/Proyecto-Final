@@ -220,7 +220,7 @@ main .seccion-main .div-1 div p {
 main .seccion-main .div-1 div a {
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   color: #EDEDED;
-  background-color: #D9762A;
+  background-color: #B85C1C;
   border-radius: 3px;
   text-decoration: none;
   font-size: 1.2rem;
@@ -266,7 +266,7 @@ main .seccion-main .div-2 div p {
 main .seccion-main .div-2 div a {
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   color: #EDEDED;
-  background-color: #D9762A;
+  background-color: #B85C1C;
   border-radius: 3px;
   text-decoration: none;
   font-size: 1.2rem;
@@ -289,7 +289,7 @@ main .seccion-main .div-3::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   z-index: 1;
@@ -312,7 +312,7 @@ main .seccion-main .div-3 div p {
 main .seccion-main .div-3 div a {
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   color: #EDEDED;
-  background-color: #D9762A;
+  background-color: #B85C1C;
   border-radius: 3px;
   text-decoration: none;
   font-size: 1.2rem;
@@ -358,13 +358,102 @@ main .seccion-main .div-4 div p {
 main .seccion-main .div-4 div a {
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   color: #EDEDED;
-  background-color: #D9762A;
+  background-color: #B85C1C;
   border-radius: 3px;
   text-decoration: none;
   font-size: 1.2rem;
 }
 main .seccion-main .div-4 div a:hover {
   background-color: #BB4430;
+}
+
+main .titulo-precios {
+  color: #EDEDED;
+  text-align: center;
+  padding: 2.5rem 2rem 1.5rem 2rem;
+  font-size: 2.2rem;
+}
+main .formas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .formas .forma-1 {
+  height: 2px;
+  width: 30%;
+  background-color: #6b6b6b;
+}
+main .formas .forma-2 {
+  height: 7px;
+  width: 2%;
+  border-radius: 3px;
+  margin: 0rem 1rem;
+  background-color: #6b6b6b;
+}
+main .formas .forma-3 {
+  height: 2px;
+  width: 30%;
+  background-color: #6b6b6b;
+}
+main .texto-precio {
+  color: #EDEDED;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  font-size: 1.2rem;
+}
+main section a {
+  text-decoration: none;
+}
+main section a .producto {
+  background-color: #080808;
+  margin: 2rem 2rem 3rem 2rem;
+  padding: 1rem;
+  border-radius: 7px;
+  border: 2px solid #D9762A;
+}
+main section a .producto h1 {
+  color: #EDEDED;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.9rem;
+}
+main section a .producto .texto-1 {
+  color: #EDEDED;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+}
+main section a .producto .texto-2 {
+  color: #6b6b6b;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 1rem 0 0.3rem 0;
+}
+main section a .producto .estrellas {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #D9762A;
+  text-align: center;
+}
+main section a .producto ul {
+  list-style-type: none;
+  color: #D9762A;
+  text-align: center;
+  padding: 1.2rem 0;
+}
+main section a .producto ul li {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+  color: #EDEDED;
+  padding: 0.2rem;
+}
+main section a .producto .precio {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #D9762A;
+  font-size: 1.4rem;
+  padding: 0.5rem 0 1.5rem 0;
 }
 
 /*# sourceMappingURL=main.css.map */
