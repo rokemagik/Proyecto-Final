@@ -112,6 +112,12 @@ footer {
         font-size: 1.2rem;
         text-align: center;
         padding: 1rem;
+
+        @include m.telefono {
+            max-width: 550px;
+            width: 90%;
+            margin: 0 auto;
+        }
     }
 
     .seguinos {

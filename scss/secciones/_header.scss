@@ -2,7 +2,7 @@
 @use '../utilidades/mixins' as m;
 
 header {
-    background-image: linear-gradient(to left, rgba(0,0,0,0) 70%, rgba(0,0,0,0.4)), linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%), url("../img/imagen-header.webp");
+    background-image: linear-gradient(to left, rgba(0,0,0,0) 70%, rgba(0,0,0,0.4)), linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%), linear-gradient(to top, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%), url("../img/imagen-header.webp");
     background-position: center center;
     background-size: cover;
     min-height: 25rem;
@@ -19,6 +19,10 @@ header {
             color: v.$blanco-humo;
             line-height: 1;
             padding-top: .6rem;
+
+            @include m.tablet {
+                padding-top: 0;
+            }
         }
 
         .nav-list {
@@ -30,18 +34,19 @@ header {
             margin: 1.5rem 0rem;
 
         li {
-            background-color: v.$gris-oscuro;
             width: 100%;
             text-align: center;
             border-radius: 3px;
-            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
                 a {
                 display: block;
                 padding: .5rem 1rem;
                 text-decoration: none;
                 color: v.$naranja;
                 font-size: 1.2rem;
+
+                @include m.laptop {
+                    font-size: 1.4rem;
+                }
             }
         }
 
@@ -87,7 +92,7 @@ header {
             right: 0;
             bottom: 0;
             background: #000000;
-            background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(23, 23, 23, 1) 100%);
+            background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(26, 26, 26, 1) 100%);
             padding: 1.7rem;
             box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
 
@@ -102,9 +107,18 @@ header {
             opacity: 0;
             transition: transform 0.3s ease, opacity 0.3s ease;
         }
-        }
 
         @include m.telefono {
+            padding: 2.2rem;
+        }
+
+        @include m.tablet {
+            background: transparent;
+        }
+
+        }
+
+        @include m.tablet {
         .abrir-menu,
         .cerrar-menu {
             display: none;
@@ -126,10 +140,15 @@ header {
             flex-direction: row;
             align-items: center;
             gap: 2rem;
+
+            @include m.telefono {
+                gap: 0;
+            }
         }
         }
 
-        @include m.tablet {
+        @include m.telefono {
+            margin-top: 1rem;
             justify-content: space-around;
         }
     }
@@ -148,6 +167,14 @@ header {
             font-size: 1.2rem;
             margin: .7rem 0 2rem 1.5rem;
             line-height: 1.4;
+
+            @include m.telefono {
+                margin-left: 10rem;
+            }
+
+            @include m.tablet {
+                margin-left: 18rem;
+            }
         }
 
         .boton-header {
@@ -162,5 +189,17 @@ header {
                 background-color: v.$rojo-suave;
             }
         }
+
+        @include m.tablet {
+            margin-right: 5rem;
+        }
+
+        @include m.tablet {
+            padding-top: 8rem;
+        }
+    }
+
+    @include m.tablet {
+        min-height: 30rem;
     }
 }
