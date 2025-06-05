@@ -25,6 +25,10 @@ main {
         @include m.tablet {
             margin: 8rem 0 2rem 0;
         }
+
+        @include m.monitor {
+            margin: 1rem 0 2rem 0;
+        }
     }
 
     .seccion-main {
@@ -60,12 +64,24 @@ main {
                 h1 {
                     color: v.$blanco-humo;
                     font-size: 1.5rem;
+
+                    @include m.laptop {
+                        font-size: 1.8rem;
+                    }
                 }
                 p {
                     color: v.$blanco-humo;
                     margin: 0.5rem 0 1.5rem 0;
                     line-height: 1.4;
                     font-size: 1.1rem;
+
+                    @include m.laptop {
+                        font-size: 1.3rem;
+                    }
+                    
+                    @include m.monitor {
+                        white-space: pre-line;
+                    }
                 }
                 a {
                     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
@@ -78,6 +94,18 @@ main {
                     &:hover {
                         background-color: v.$rojo-suave;
                     }
+
+                    @include m.laptop {
+                        font-size: 1.4rem;
+                    }
+                }
+
+                @include m.laptop {
+                    padding: 0 2rem 2.3rem 2rem;
+                }
+
+                @include m.monitor {
+                    padding: 0 2rem 3rem 2.5rem;
                 }
             }
 
@@ -86,7 +114,11 @@ main {
             }
 
             @include m.tablet {
-                height: 17rem;
+                height: 18rem;
+            }
+
+            @include m.laptop{
+                height: 23rem;
             }
         }
         .div-2 {
@@ -119,12 +151,24 @@ main {
                 h1 {
                     color: v.$blanco-humo;
                     font-size: 1.5rem;
+
+                    @include m.laptop {
+                        font-size: 1.8rem;
+                    }
                 }
                 p {
                     color: v.$blanco-humo;
                     margin: 0.5rem 0 1.5rem 0;
                     line-height: 1.4;
                     font-size: 1.1rem;
+
+                    @include m.laptop {
+                        font-size: 1.3rem;
+                    }
+
+                    @include m.monitor {
+                        white-space: pre-line;
+                    }
                 }
                 a {
                     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
@@ -137,6 +181,18 @@ main {
                     &:hover {
                         background-color: v.$rojo-suave;
                     }
+
+                    @include m.laptop {
+                        font-size: 1.4rem;
+                    }
+                }
+
+                @include m.laptop {
+                    padding: 0 2rem 2.3rem 2rem;
+                }
+
+                @include m.monitor {
+                    padding: 0 2rem 3rem 2.5rem;
                 }
             }
 
@@ -145,7 +201,11 @@ main {
             }
 
             @include m.tablet {
-                height: 17rem;
+                height: 18rem;
+            }
+
+            @include m.laptop {
+                height: 23rem;
             }
         }
         .div-3 {
@@ -178,12 +238,24 @@ main {
                 h1 {
                     color: v.$blanco-humo;
                     font-size: 1.5rem;
+
+                    @include m.laptop {
+                        font-size: 1.8rem;
+                    }
                 }
                 p {
                     color: v.$blanco-humo;
                     margin: 0.5rem 0 1.5rem 0;
                     line-height: 1.4;
                     font-size: 1.1rem;
+
+                    @include m.laptop {
+                        font-size: 1.3rem;
+                    }
+
+                    @include m.monitor {
+                        white-space: pre-line;
+                    }
                 }
                 a {
                     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
@@ -196,6 +268,18 @@ main {
                     &:hover {
                         background-color: v.$rojo-suave;
                     }
+
+                    @include m.laptop {
+                        font-size: 1.4rem;
+                    }
+                }
+
+                @include m.laptop {
+                    padding: 0 2rem 2.3rem 2rem;
+                }
+
+                @include m.monitor {
+                    padding: 0 2rem 3rem 2.5rem;
                 }
             }
 
@@ -204,7 +288,11 @@ main {
             }
 
             @include m.tablet {
-                height: 17rem;
+                height: 18rem;
+            }
+
+            @include m.laptop {
+                height: 23rem;
             }
         }
         .div-4 {
@@ -237,12 +325,24 @@ main {
                 h1 {
                     color: v.$blanco-humo;
                     font-size: 1.5rem;
+
+                    @include m.laptop {
+                        font-size: 1.8rem;
+                    }
                 }
                 p {
                     color: v.$blanco-humo;
                     margin: 0.5rem 0 1.5rem 0;
                     line-height: 1.4;
                     font-size: 1.1rem;
+
+                    @include m.laptop {
+                        font-size: 1.3rem;
+                    }
+
+                    @include m.monitor {
+                        white-space: pre-line;
+                    }
                 }
                 a {
                     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
@@ -255,6 +355,18 @@ main {
                     &:hover {
                         background-color: v.$rojo-suave;
                     }
+
+                    @include m.laptop {
+                        font-size: 1.4rem;
+                    }
+                }
+
+                @include m.laptop {
+                    padding: 0 2rem 2.3rem 2rem;
+                }
+
+                @include m.monitor {
+                    padding: 0 2rem 3rem 2.5rem;
                 }
             }
 
@@ -263,7 +375,11 @@ main {
             }
 
             @include m.tablet {
-                height: 17rem;
+                height: 18rem;
+            }
+
+            @include m.laptop {
+                height: 23rem;
             }
         }
 
@@ -277,8 +393,14 @@ main {
             display: grid;
             grid-template-columns: repeat(2, 50%);
             max-width: 920px;
-            width: 90%;
-            margin: 0 auto;
+        }
+
+        @include m.laptop {
+            max-width: 1020px;
+        }
+
+        @include m.monitor {
+            max-width: 1300px;
         }
     }
 }
