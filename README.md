@@ -1,0 +1,2 @@
+
+Pagina web de venta de servicios de desrrollo web, adaptada a diferentes dispositivos, con tenicas de SEO, animaciones, codigo estructurado en sass y con una aplicacion de JS, con contenido medio basico al ser un prototipo del algo real, con un diseño moderno.
