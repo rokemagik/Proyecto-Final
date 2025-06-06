@@ -51,6 +51,7 @@ header {
                 text-decoration: none;
                 color: v.$blanco-humo;
                 font-size: 1.2rem;
+                transition: background-color 0.4s ease, color 0.4s ease;
 
                 @include m.laptop {
                     font-size: 1.4rem;
@@ -222,6 +223,7 @@ header {
             padding: .6rem 1.8rem .6rem 1.8rem;
             font-size: 1.1rem;
             border-radius: 3px;
+            transition: background-color 0.4s ease, color 0.4s ease;
 
             &:hover {
                 background-color: v.$rojo-suave;

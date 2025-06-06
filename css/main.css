@@ -78,6 +78,7 @@ header .contenedor-header .nav-list li a {
   text-decoration: none;
   color: #EDEDED;
   font-size: 1.2rem;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 @media (min-width: 1140px) {
   header .contenedor-header .nav-list li a {
@@ -243,6 +244,7 @@ header .seccion-header .boton-header {
   padding: 0.6rem 1.8rem 0.6rem 1.8rem;
   font-size: 1.1rem;
   border-radius: 3px;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 header .seccion-header .boton-header:hover {
   background-color: #BB4430;
@@ -373,6 +375,7 @@ main .seccion-main .div-1 div a {
   border-radius: 3px;
   text-decoration: none;
   font-size: 1.2rem;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 main .seccion-main .div-1 div a:hover {
   background-color: #BB4430;
@@ -464,6 +467,7 @@ main .seccion-main .div-2 div a {
   border-radius: 3px;
   text-decoration: none;
   font-size: 1.2rem;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 main .seccion-main .div-2 div a:hover {
   background-color: #BB4430;
@@ -555,6 +559,7 @@ main .seccion-main .div-3 div a {
   border-radius: 3px;
   text-decoration: none;
   font-size: 1.2rem;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 main .seccion-main .div-3 div a:hover {
   background-color: #BB4430;
@@ -646,6 +651,7 @@ main .seccion-main .div-4 div a {
   border-radius: 3px;
   text-decoration: none;
   font-size: 1.2rem;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 main .seccion-main .div-4 div a:hover {
   background-color: #BB4430;
@@ -831,7 +837,7 @@ main .seccion-precios a .producto .precio {
   }
 }
 main .seccion-precios a:hover {
-  filter: brightness(80%);
+  filter: brightness(150%);
 }
 @media (min-width: 480px) {
   main .seccion-precios {
@@ -1002,6 +1008,7 @@ footer .redes a {
   color: #F29F05;
   text-decoration: none;
   font-size: 1.5rem;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 footer .redes a:hover {
   color: #D9762A;
@@ -1051,6 +1058,7 @@ main .seccion-contacto .div-1 .div-2 a {
   color: #D9762A;
   font-size: 2.3rem;
   padding: 1.5rem;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 @media (min-width: 480px) {
   main .seccion-contacto .div-1 .div-2 a {
@@ -1123,6 +1131,7 @@ main .seccion-contacto .form button {
   cursor: pointer;
   font-size: 1rem;
   padding: 10px;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 main .seccion-contacto .form button:hover {
   color: #000000;
