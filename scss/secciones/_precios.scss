@@ -55,7 +55,7 @@ main {
         }
     }
 
-    section {
+    .seccion-precios {
         
         a {
             text-decoration: none;
@@ -137,6 +137,10 @@ main {
                 @include m.monitor {
                     margin: 2rem 1rem 3rem 1rem;
                 }
+            }
+
+            &:hover {
+                filter: brightness(80%);
             }
         }
 

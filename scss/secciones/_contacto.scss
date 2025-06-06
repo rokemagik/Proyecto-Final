@@ -1,0 +1,161 @@
+@use '../utilidades/variables' as v;
+@use '../utilidades/mixins' as m;
+
+
+main {
+    .seccion-contacto {
+        padding: 2rem 2rem 2rem 2rem;
+        background-color: v.$negro;
+
+        .div-1 {
+
+            .titulo{
+                color: v.$blanco-humo;
+                font-size: 2rem;
+                padding: 1rem;
+
+                @include m.monitor {
+                    font-size: 2.6rem;
+                    padding: 1rem 2rem;
+                }
+            }
+
+            .texto {
+                color: v.$blanco-humo;
+                font-size: 1.3rem;
+                margin-bottom: 2rem;
+
+                @include m.monitor {
+                    font-size: 1.6;
+                    padding: 0 1.2rem;
+                }
+            }
+
+            .div-2 {
+                display: flex;
+                justify-content: center;
+
+                a {
+                    color: v.$naranja;
+                    font-size: 2.3rem;
+                    padding: 1.5rem;
+
+                    @include m.telefono {
+                        padding: 2rem;
+                    }
+
+                    &:hover {
+                    color: v.$blanco-humo;
+                }
+                }
+
+                @include m.tablet {
+                    justify-content: space-around;
+                }
+
+                @include m.laptop {
+                    padding-top: 2rem;
+                }
+            }
+
+            @include m.laptop {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                gap: 1rem;
+            }
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.4rem;
+            text-align: center;
+            padding-bottom: 3rem;
+
+            .input-box {
+
+                input {
+                    width: 100%;
+                    height: 4rem;
+                    padding: 0 1rem;
+                    outline: none;
+                    background-color: rgba(255 255 255 / .1);
+                    border: 3px solid transparent;
+                    letter-spacing: 1px;
+                    color: v.$blanco-humo;
+
+                    @include m.tablet {
+                        width: 80%;
+                    }
+                }
+
+                textarea {
+                    width: 100%;
+                    height: 13rem;
+                    outline: none;
+                    background-color: rgba(255 255 255 / .1);
+                    border: 3px solid transparent;
+                    letter-spacing: 1px;
+                    color: v.$blanco-humo;
+                    padding: 1rem;
+
+                    @include m.tablet {
+                        width: 80%;
+                    }
+                }
+            }
+
+            button {
+                background-color: v.$naranja-oscuro;
+                color: v.$blanco-humo;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                font-size: 1rem;
+                padding: 10px;
+
+                &:hover {
+                    color: v.$negro;
+                    background-color: v.$blanco-humo;
+                }
+
+                @include m.tablet {
+                    display: block;
+                    width: 80%;
+                    margin: auto;
+                }
+
+                @include m.monitor {
+                    width: 30%;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        
+        @include m.tablet {
+            padding-top: 6rem;
+            padding-bottom: 12rem;
+        }
+
+        @include m.laptop {
+            background: #232526;
+            background: -webkit-linear-gradient(to right, #232526, #0d0d0e);
+            background: linear-gradient(to right, #232526, #0d0d0e);
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            margin: 3rem 5rem 4rem 5rem;
+            padding: 4rem 4rem 1rem 4rem;
+            border-radius: 7px;
+            border: 2px solid v.$naranja;
+        }
+
+        @include m.monitor {
+            max-width: 1320px;
+            width: 90%;
+            margin: 5rem auto;
+            margin-bottom: 8rem;
+            justify-content: center;
+        }
+    }
+}

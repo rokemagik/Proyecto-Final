@@ -1,0 +1,160 @@
+@use '../utilidades/variables' as v;
+@use '../utilidades/mixins' as m;
+
+main {
+
+    .seccion1-nosotros {
+        padding: 1.5rem;
+        margin-top: 3rem;
+
+        .imagen-nosotros {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            border: 1px solid v.$naranja-oscuro;
+
+            @include m.laptop {
+                width: 50%;
+            }
+        }
+
+        div {
+            text-align: center;
+
+            h3 {
+                color: v.$blanco-humo;
+                margin: 1rem 2rem .3rem 2rem;
+                font-size: 1.6rem;
+
+                @include m.laptop {
+                    font-size: 1.9rem;
+                }
+            }
+
+            .forma-nosotros {
+                margin: .3rem auto;
+                height: 2px;
+                width: 95%;
+                background-color: v.$gris-claro;
+            }
+
+            .t1 {
+                color: v.$naranja;
+                font-size: 1.4rem;
+            }
+
+            .t2 {
+                color: v.$blanco-humo;
+                font-size: 1.3rem;
+            }
+
+            @include m.laptop {
+                text-align: left;
+            }
+        }
+
+        @include m.telefono {
+            max-width: 430px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        @include m.tablet {
+            max-width: 630px;
+        }
+
+        @include m.laptop {
+            display: flex;
+            max-width: 1030px;
+            gap: 2rem;
+        }
+
+        @include m.monitor {
+            max-width: 1200px;
+        }
+    }
+
+    .seccion2-nosotros {
+        padding: 2rem 1.5rem;
+
+        h3 {
+            color: v.$blanco-humo;
+            text-align: center;
+            font-size: 2.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .grid {
+            .div-1 {
+                h2 {
+                    color: v.$naranja;
+                    padding: 1rem 0 .3rem 1rem;
+                }
+                p {
+                    color: v.$blanco-humo;
+                    font-size: 1.1rem;
+                }
+            }
+            .div-2 {
+                h2 {
+                    color: v.$naranja;
+                    padding: 1rem 0 .3rem 1rem;
+                }
+                p {
+                    color: v.$blanco-humo;
+                    font-size: 1.1rem;
+                }
+            }
+            .div-3 {
+                h2 {
+                    color: v.$naranja;
+                    padding: 1rem 0 .3rem 1rem;
+                }
+                p {
+                    color: v.$blanco-humo;
+                    font-size: 1.1rem;
+                }
+            }
+            .div-4 {
+                h2 {
+                    color: v.$naranja;
+                    padding: 1rem 0 .3rem 1rem;
+                }
+                p {
+                    color: v.$blanco-humo;
+                    font-size: 1.1rem;
+                }
+            }
+
+             @include m.laptop {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 4rem;
+            }
+        }
+
+        @include m.telefono {
+            max-width: 430px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        @include m.tablet {
+            max-width: 630px;
+        }
+
+        @include m.laptop {
+            background: #232526;
+            background: -webkit-linear-gradient(to right, #232526, #0d0d0e);
+            background: linear-gradient(to right, #232526, #0d0d0e);
+            margin-top: 9rem;
+            max-width: 1000px;
+            border-radius: 7px;
+            border: 2px solid v.$naranja;
+        }
+
+        @include m.monitor {
+            max-width: 1200px;
+        }
+    }
+}
